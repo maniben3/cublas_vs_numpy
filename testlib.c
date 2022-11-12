@@ -4,5 +4,6 @@ void myprint(void);
 
 void myprint()
 {
-    printf("hello world\n");
+    printf("hi\n");
+    printf("heeei\n");
 }
