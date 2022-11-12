@@ -277,7 +277,7 @@ cleanup:
     free(seed_primes);
 }
 
-int our_function(int num_numbers, int *numbers) {
+int our_function(void) {
     struct timeval tv1, tv2;
     gettimeofday(&tv1, NULL);
     sieve(1e6);
