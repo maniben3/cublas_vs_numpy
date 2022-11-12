@@ -11,5 +11,5 @@ int main( int argc, char** argv )
 {
     test<<<1,1>>>();
     cudaDeviceSynchronize();
-    return 0;
+    return printf("Hicuda");
 }
