@@ -1,3 +1,3 @@
 int our_function(void) {
-    return 5;
+    return 999;
 }
