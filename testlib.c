@@ -6,4 +6,5 @@ void myprint()
 {
     printf("hi\n");
     printf("heeei\n");
+    printf("ddd\n");
 }
