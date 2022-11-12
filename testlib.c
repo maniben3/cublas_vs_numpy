@@ -1,10 +1,6 @@
 #include <stdio.h>
 
-void myprint(void);
-
-void myprint()
-{
-    printf("hi\n");
-    printf("heeei\n");
-    printf("ddd\n");
+int main(void) {
+   printf("Hello, World! \n");
+   return 0;
 }
