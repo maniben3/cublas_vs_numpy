@@ -9,9 +9,8 @@ __global__ void test(){
 }
 void myprint(void);
 
-int myprint()
+void myprint()
 {
     test<<<1,1>>>();
-    cudaDeviceSynchronize();
-    return printf("Hicuda");
+    printf("hello world\n");
 }
