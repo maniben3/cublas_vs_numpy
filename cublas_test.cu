@@ -1,5 +1,5 @@
 #include <cublas_v2.h>
-
+#include <stdio.h>    
 typedef float ftype;
 extern "C"
 
@@ -14,7 +14,8 @@ void run(ftype *i1, ftype  *i2, ftype *o1, int d){
 	cudaMalloc(&d_o1, ds);
 	cudaMemcpy(d_i1, i1, ds, cudaMemcpyHostToDevice);
 	cudaMemcpy(d_i2, i2, ds, cudaMemcpyHostToDevice);
-        printf("super/n"):
+	
+        printf("super/n");
 	cublasHandle_t h;
 	cublasCreate(&h);
 	ftype alpha = 1.0;
