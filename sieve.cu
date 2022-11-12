@@ -277,10 +277,10 @@ cleanup:
     free(seed_primes);
 }
 
-int our_function(void) {
+int our_function(int num_numbers, int *numbers) {
     struct timeval tv1, tv2;
     gettimeofday(&tv1, NULL);
-    sieve(1e6);
+    sieve(num_numbers);
     gettimeofday(&tv2, NULL);
     printf("Total time = %f seconds\n", (double) (tv2.tv_usec - tv1.tv_usec) / 1000000 + (double) (tv2.tv_sec - tv1.tv_sec));
 }
