@@ -3,11 +3,13 @@
 #include <cuda.h>
 #include <cuda_runtime.h>
 
+
 __global__ void test(){
     printf("Hi Cuda World");
 }
+void myprint(void);
 
-int main( int argc, char** argv )
+int myprint()
 {
     test<<<1,1>>>();
     cudaDeviceSynchronize();
